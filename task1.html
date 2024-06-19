@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item"><a href="#home">Home</a></li>
+            <li class="menu-item"><a href="#about">About Us</a></li>
+            <li class="menu-item"><a href="#menu">Menu</a></li>
+            <li class="menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="home1.webp" alt="Delicious Cakes">
+                    <div class="caption">Delicious Cakes</div>
+                </div>
+                <div class="slide">
+                    <img src="home2.avif" alt="Fresh Ingredients">
+                    <div class="caption">Fresh Ingredients</div>
+                </div>
+                <div class="slide">
+                    <img src="home3.jpg" alt="Beautiful Designs">
+                    <div class="caption">Beautiful Designs</div>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Learn more about our story and our passion for baking.</p>
+        <img src="about.jpg" alt="About Us">
+    </section>
+    
+    <section id="menu">
+        <h1>Our Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="cake1.webp" alt="Chocolate Cake">
+                <h2>Chocolate Cake</h2>
+                <p>A rich and moist chocolate cake.</p>
+            </div>
+            <div class="menu-item">
+                <img src="cake2.webp" alt="Vanilla Cake">
+                <h2>Vanilla Cake</h2>
+                <p>A classic vanilla cake with buttercream frosting.</p>
+            </div>
+            <div class="menu-item">
+                <img src="cake3.webp" alt="Red Velvet Cake">
+                <h2>Red Velvet Cake</h2>
+                <p>A smooth and velvety red velvet cake.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for orders and inquiries.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
